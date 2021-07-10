@@ -1,7 +1,20 @@
+[![Build Status](https://github.com/gielfeldt/fas-example/actions/workflows/test.yml/badge.svg)][4]
+![Test Coverage](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/gielfeldt/74c795e02f2f06f70239c7d801736caf/raw/fas-example__main.json)
+
+[![Latest Stable Version](https://poser.pugx.org/fas/example/v/stable.svg)][1]
+[![Latest Unstable Version](https://poser.pugx.org/fas/example/v/unstable.svg)][2]
+[![License](https://poser.pugx.org/fas/example/license.svg)][3]
+![Total Downloads](https://poser.pugx.org/fas/example/downloads.svg)
+
+# Installation
+
+```bash
+composer create-project fas/example myproject
+```
 
 # Usage (dev mode)
-```
-%> docker-compose up --build -d
+```bash
+docker-compose up --build -d
 ```
 
 # Files
@@ -43,12 +56,17 @@ src/RouterFactory.php    # routes setup
 ```
 
 # Create prod build
-```
-%> docker build -t fas:prod --target prod .
+```bash
+docker build -t fas:prod --target prod .
 ```
 
 # Run the prod build
-```
-%> docker run -d --name fas --rm -it -p8081:80 -v`pwd`/config.yaml:/app/config.yaml:ro fas:prod
+```bash
+docker run -d --name fas --rm -it -p8081:80 -v`pwd`/config.yaml:/app/config.yaml:ro fas:prod
 ````
 
+
+[1]:  https://packagist.org/packages/fas/example
+[2]:  https://packagist.org/packages/fas/example#dev-main
+[3]:  https://github.com/gielfeldt/fas-example/blob/main/LICENSE.md
+[4]:  https://github.com/gielfeldt/fas-example/actions/workflows/test.yml
