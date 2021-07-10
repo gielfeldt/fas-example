@@ -1,0 +1,26 @@
+{
+    "name": "fas/example",
+    "description": "Example using fas",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require": {
+        "fas/configuration": "^0.2",
+        "fas/di": "^0.4",
+        "fas/routing": "^0.6",
+        "laminas/laminas-diactoros": "^2.6",
+        "laminas/laminas-httphandlerrunner": "^1.4"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9",
+        "phpmd/phpmd": "^2.10",
+        "squizlabs/php_codesniffer": "^3.6"
+    }
+}

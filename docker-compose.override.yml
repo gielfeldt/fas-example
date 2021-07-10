@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  api:
+    extra_hosts:
+      # if not running on mac:
+      # set the host.docker.internal to a host ip reachable by the container
+      host.docker.internal: 192.0.0.2
