@@ -1,6 +1,17 @@
 {
     "name": "fas/example",
+    "type": "template",
     "description": "Example using fas",
+    "keywords": [
+        "template",
+        "router",
+        "autowire",
+        "container",
+        "rest",
+        "api"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/gielfeldt/fas-example",
     "autoload": {
         "psr-4": {
             "App\\": "src/"
