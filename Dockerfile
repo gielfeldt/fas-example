@@ -52,6 +52,7 @@ RUN mkdir /app/cache
 COPY composer.json /app/composer.json
 COPY composer.lock /app/composer.lock
 RUN composer install --prefer-dist --no-dev --optimize-autoloader
+#COPY --chown=www-data:www-data vendor /app/vendor
 
 COPY src /app/src
 COPY bin /app/bin

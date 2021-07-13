@@ -20,9 +20,11 @@
     "require": {
         "fas/configuration": "^0.2",
         "fas/di": "^0.4",
-        "fas/routing": "^0.6",
+        "fas/routing": "^0.7",
         "laminas/laminas-diactoros": "^2.6",
-        "laminas/laminas-httphandlerrunner": "^1.4"
+        "laminas/laminas-httphandlerrunner": "^1.4",
+        "laminas/laminas-stratigility": "^3.4",
+        "filp/whoops": "^2.13"
     },
     "autoload-dev": {
         "psr-4": {

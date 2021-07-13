@@ -1,0 +1,5 @@
+example:
+  default:
+    name: john prod
+
+include_stack_trace: false

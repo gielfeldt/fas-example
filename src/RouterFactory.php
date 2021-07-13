@@ -3,8 +3,8 @@
 namespace App;
 
 use Fas\Configuration\ConfigurationInterface;
-use Fas\Routing\ErrorResponse;
 use Fas\Routing\Router;
+use Fas\Routing\WhoopsMiddleware;
 use Psr\Container\ContainerInterface;
 use Psr\Http\Message\ResponseFactoryInterface;
 
@@ -12,9 +12,8 @@ class RouterFactory
 {
     public static function create(ContainerInterface $container)
     {
-        // assumes $container is already set
         $router = new Router($container);
-        $router->middleware(ErrorResponse::class);
+        $router->middleware(WhoopsMiddleware::class);
 
         $router->map('GET', '/hello/[{name}]', function (ResponseFactoryInterface $responseFactory, ConfigurationInterface $configuration, $name = null) {
             $name = $name ?? $configuration->get('example.default.name', 'nobody');

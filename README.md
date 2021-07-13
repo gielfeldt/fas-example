@@ -41,6 +41,7 @@ bin/preload.php          # preload entry point for production
 bin/preload.app.php      # preloads specific to this application
 
 config.yaml              # custom configuration file for your project
+config.prod.yaml         # example of could-be prod config file
 ```
 
 

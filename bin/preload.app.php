@@ -12,4 +12,9 @@ require_once('/app/vendor/laminas/laminas-diactoros/src/ResponseFactory.php');
 require_once('/app/vendor/laminas/laminas-diactoros/src/Response.php');
 require_once('/app/vendor/laminas/laminas-httphandlerrunner/src/Emitter/SapiEmitter.php');
 
-require_once('/app/vendor/fas/routing/src/ErrorResponse.php');
+require_once('/app/vendor/filp/whoops/src/Whoops/Run.php');
+require_once('/app/vendor/filp/whoops/src/Whoops/Util/SystemFacade.php');
+require_once('/app/vendor/filp/whoops/src/Whoops/Handler/PrettyPageHandler.php');
+require_once('/app/vendor/filp/whoops/src/Whoops/Util/TemplateHelper.php');
+require_once('/app/vendor/filp/whoops/src/Whoops/Exception/Inspector.php');
+require_once('/app/vendor/fas/routing/src/WhoopsMiddleware.php');

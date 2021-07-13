@@ -1,3 +1,5 @@
 example:
   default:
-    name: john doe
+    name: john dev
+
+include_stack_trace: true
